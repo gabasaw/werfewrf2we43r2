@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Sobre - Aviação Elite</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+/* --- Reset básico --- */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;
+background-color:#ffffff;
+color:#000000;
+line-height:1.6;
+}
+
+/* --- Navbar --- */
+.navbar{
+background-color:#000000;
+padding:20px 40px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.navbar .logo{
+font-size:1.5rem;
+color:#ffffff;
+}
+
+.navbar ul{
+list-style:none;
+display:flex;
+gap:30px;
+}
+
+.navbar a{
+color:#ffffff;
+text-decoration:none;
+font-weight:500;
+transition:color 0.3s ease;
+}
+
+.navbar a:hover{
+color:#e2c351;
+}
+
+/* --- Seções Sobre --- */
+
+main{
+max-width:1200px;
+margin:50px auto;
+padding:0 20px;
+}
+
+main h2{
+  font-size:2.5rem;
+  color:#000;
+  text-align:center;
+  margin-bottom:50px;
+  position:relative;
+}
+
+.sobre-bloco{
+display:flex;
+align-items:center;
+gap:30px;
+margin-bottom:50px;
+opacity:0;
+transform:translateY(30px);
+animation:fadeInUp 1s forwards;
+}
+
+.sobre-bloco.reverse{
+flex-direction:row-reverse;
+}
+
+.sobre-img{
+flex:1;
+position:relative;
+overflow:hidden;
+border-radius:8px;
+}
+
+.sobre-img::after{
+content:"";
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(255,255,255,0.30);
+pointer-events:none;
+}
+
+.sobre-img img{
+width:100%;
+height:250px;
+object-fit:cover;
+border-radius:8px;
+transition:transform 0.5s ease, box-shadow 0.5s ease;
+
+/* sombra leve */
+box-shadow:0 6px 18px rgba(0,0,0,0.15);
+}
+
+.sobre-img img:hover{
+transform:scale(1.03);
+
+/* sombra mais forte no hover */
+box-shadow:0 12px 30px rgba(0,0,0,0.25);
+}
+
+.sobre-texto{
+flex:1;
+text-align:left;
+}
+
+.sobre-texto h3{
+  font-size: 2rem;
+  color:#e2c351;
+  margin-bottom:18px;
+  font-weight:700;
+
+  /* sombra muito mais suave */
+  text-shadow:0 1px 2px rgba(0,0,0,0.15);
+}
+
+.sobre-texto p{
+font-size:1.1rem;
+color:#333333;
+
+/* sombra suave para leitura */
+text-shadow:0px 1px 3px rgba(0,0,0,0.08);
+}
+
+/* --- Footer --- */
+
+footer{
+background-color:#000000;
+color:#ffffff;
+padding:20px;
+text-align:center;
+margin-top:50px;
+}
+
+/* --- Animação Fade-in + slide --- */
+
+@keyframes fadeInUp{
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+/* --- Responsividade --- */
+
+@media(max-width:900px){
+
+.sobre-bloco,
+.sobre-bloco.reverse{
+flex-direction:column;
+text-align:center;
+}
+
+.sobre-texto{
+text-align:center;
+}
+
+.sobre-img img{
+height:200px;
+}
+
+}
+
+@media(max-width:600px){
+
+main h2{
+font-size:2rem;
+}
+
+.sobre-texto h3{
+font-size:1.5rem;
+}
+
+.sobre-texto p{
+font-size:1rem;
+}
+
+.sobre-img img{
+height:180px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<header class="navbar">
+<h1 class="logo">Aviação Elite</h1>
+
+<nav>
+<ul>
+<li><a href="index.html">Início</a></li>
+<li><a href="sobre.html">Sobre</a></li>
+<li><a href="produtos.html">Produtos</a></li>
+<li><a href="contato.html">Contato</a></li>
+</ul>
+</nav>
+
+</header>
+
+<!-- Conteúdo principal -->
+
+<main>
+
+<h2 id="typewriter"></h2>
+
+<!-- Bloco 1 -->
+
+<section class="sobre-bloco" style="animation-delay:0.2s;">
+
+<div class="sobre-img">
+<img src="entrada.jpeg" alt="Equipe Aviação Elite">
+</div>
+
+<div class="sobre-texto">
+<h3>Quem Somos</h3>
+
+<p>
+A Oton Parts Corp atua com excelência em manutenção, componentes e soluções aeronáuticas,
+unindo precisão técnica, segurança e compromisso com a qualidade em cada projeto.
+</p>
+
+</div>
+
+</section>
+
+<!-- Bloco 2 -->
+
+<section class="sobre-bloco reverse" style="animation-delay:0.4s;">
+
+<div class="sobre-img">
+<img src="estrutura.jpeg" alt="Fábrica e manutenção">
+</div>
+
+<div class="sobre-texto">
+
+<h3>Nossa Estrutura</h3>
+
+<p>
+Contamos com estrutura moderna, equipe qualificada e equipamentos adequados para garantir
+eficiência, controle e alto padrão em nossos serviços aeronáuticos.
+</p>
+
+</div>
+
+</section>
+
+<!-- Bloco 3 -->
+
+<section class="sobre-bloco" style="animation-delay:0.6s;">
+
+<div class="sobre-img">
+<img src="tapecaria.png" alt="Aeronaves em voo">
+</div>
+
+<div class="sobre-texto">
+
+<h3>Missão</h3>
+
+<p>
+Oferecer soluções aeronáuticas com qualidade, segurança e precisão,
+contribuindo para a performance e confiabilidade de cada operação.
+</p>
+
+</div>
+
+</section>
+
+</main>
+
+<!-- Footer -->
+
+<footer>
+<p>&copy; © 2026 Oton Parts Corp. Todos os direitos reservados.</p>
+</footer>
+
+
+<script>
+const texto = "Sobre Nós...";
+const elemento = document.getElementById("typewriter");
+
+let i = 0;
+
+function digitar() {
+  if (i < texto.length) {
+    elemento.innerHTML += texto.charAt(i);
+    i++;
+    setTimeout(digitar, 100);
+  }
+}
+
+digitar();
+</script>
+
+</body>
+</html>

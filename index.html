@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Oton Parts Corp</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS principal do site -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="cards-section.css">
+</head>
+<body>
+
+  <!-- Header / Navbar -->
+  <header class="navbar">
+    <div class="logo">
+      <img src="Design sem nome (1).png" alt="Logo Oton Parts" class="logo-img">
+      <h1>Oton Parts Corp</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="produtos.html">Produtos</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<div class="video-banner">
+  <video autoplay muted loop>
+    <source src="VIDEOBANNER.mp4" type="video/mp4">
+  </video>
+</div>
+
+
+
+<section class="secao-blog">
+  <h2>Inovações e Atualizações Técnicas</h2>
+  <p>Acompanhe novidades, tecnologias e evoluções do setor aeronáutico.</p>
+
+  <!-- Linha de voo -->
+  <div class="linha-voo"></div>
+  <div class="aviao"></div>
+
+  <!-- Slider infinito -->
+  <div class="blog-slider" id="blog-slider">
+    <div class="blog-cards" id="blog-cards">
+      <!-- Card 1 -->
+      <div class="blog-card" data-info="Componente aumenta a eficiência das aeronaves em 15%">
+        <div class="blog-img">
+          <img src="exemplo.png" alt="Nova Peça de Alta Performance">
+        </div>
+        <div class="blog-conteudo">
+          <h3>..NOVIDADE..</h3>
+          <p>Conheça os novos modelos disponíveis para venda e manutenção. Alta performance e eficiência para sua operação..</p>
+        </div>
+      </div>
+
+      <!-- Card 2  FRASES QUE APARECE AO CLICAR NAS NOVIDADES-->
+      <div class="blog-card" data-info="Automação transformando manutenção aeronáutica">
+        <div class="blog-img">
+          <img src="exemplo.png" alt="Tecnologia em Manutenção">
+        </div>
+        <div class="blog-conteudo">
+          <h3>..NOVIDADE..</h3>
+          <p>Saiba por que a manutenção preventiva no turboélice pode evitar prejuízos sérios e aumentar a vida útil do motor.</p>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="blog-card" data-info="Design moderno aliado à aerodinâmica">
+        <div class="blog-img">
+          <img src="exemplo.png" alt="Inovações em Design">
+        </div>
+        <div class="blog-conteudo">
+          <h3>..NOVIDADE..</h3>
+          <p>Veja o que mudou nas normas para aeronaves de pequeno porte. Esteja regularizado e atualizado.</p>
+        </div>
+      </div>
+
+      <!-- Duplicação para scroll infinito -->
+      <div class="blog-card" data-info="Componente aumenta a eficiência das aeronaves em 15%">
+        <div class="blog-img"><img src="exemplo.png" alt="Nova Peça de Alta Performance"></div>
+        <div class="blog-conteudo">
+          <h3>..NOVIDADE..</h3>
+          <p>Lançamos recentemente um componente que aumenta a eficiência das aeronaves.</p>
+        </div>
+      </div>
+
+      <div class="blog-card" data-info="Automação transformando manutenção aeronáutica">
+        <div class="blog-img"><img src="exemplo.png" alt="Tecnologia em Manutenção"></div>
+        <div class="blog-conteudo">
+          <h3>..NOVIDADE..</h3>
+          <p>Como a automação está transformando a manutenção aeronáutica.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+ <!-- Pop-up de informação -->
+  <div class="blog-info-popup" id="blog-info-popup">
+    <span id="close-popup">&times;</span>
+    <p id="blog-info-text">Clique em um card para ver mais informações.</p>
+    <a href="#" id="blog-link" class="btn">Leia Mais</a>
+  </div>
+
+<section class="secao-servicos">
+  <div class="servico-item">
+    <img src="SERVICOSAE.png" alt="Serviço Aeronave">
+    <div class="servico-conteudo">
+      <h3>...Soluções Aeronáuticas...</h3>
+      <p>Manutenção especializada, componentes certificados e soluções técnicas para garantir máxima segurança, confiabilidade e desempenho em cada operação aérea.</p>
+      <a href="produtos.html" class="btn-modern">Conheca nossos Serviços</a>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Seção de Cards Empilhados -->
+<section class="cards-section" style="display: flex; flex-direction: column; gap: 30px; align-items: center;">
+
+  <h2 id="typewriter"></h2>
+
+
+ <!-- Card Hover com texto sobreposto -->
+<div class="card-hover" style="background-image: url('cabodecomando.png');" onclick="window.location.href='produtos.html'">
+  <div class="card-hover-conteudo">
+    <h3>Cabos de Comando Aeronáuticos</h3>
+    <p>Fabricamos e realizamos manutenção de cabos de comando
+projetados para garantir máxima precisão, segurança
+e desempenho no controle das aeronaves.</p>
+  </div>
+</div>
+
+
+ <!-- Card Hover com texto sobreposto -->
+<div class="card-hover" style="background-image: url('manutenção\ de\ aeronaves.png');" onclick="window.location.href='produtos.html'">
+  <div class="card-hover-conteudo">
+    <h3>Manutenção de Aeronaves</h3>
+    <p>Inspeção, manutenção e suporte técnico para garantir máxima performance e segurança das aeronaves.</p>
+  </div>
+</div>
+
+
+ <!-- Card Hover com texto sobreposto -->
+<div class="card-hover" style="background-image: url('pintura.png');" onclick="window.location.href='produtos.html'">
+  <div class="card-hover-conteudo">
+    <h3>Pintura de Aeronaves</h3>
+    <p> Serviços especializados de pintura aeronáutica com acabamento de alta qualidade, garantindo proteção, durabilidade e excelência visual.</p>
+  </div>
+</div>
+
+
+ <!-- Card Hover com texto sobreposto -->
+<div class="card-hover" style="background-image: url('tapecaria.png');" onclick="window.location.href='produtos.html'">
+  <div class="card-hover-conteudo">
+    <h3>Tapeçaria Interior Aeronáutica</h3>
+    <p>Serviços especializados em tapeçaria aeronáutica para renovação, conforto e valorização do interior da aeronave.</p>
+  </div>
+</div>
+
+
+ <!-- Card Hover com texto sobreposto -->
+<div class="card-hover" style="background-image: url('diario.png');" onclick="window.location.href='produtos.html'">
+  <div class="card-hover-conteudo">
+    <h3>Diário de Bordo Aeronáutico</h3>
+    <p>Cadernos de diário de bordo aeronáutico produzidos com qualidade e organização para registro completo das operações da aeronave.</p>
+  </div>
+</div>
+
+</section>
+
+
+
+  <!-- Seção de Localização -->
+  <section class="localizacao">
+    <h2>Onde nos encontrar</h2>
+    <p>Visite nosso hangar e centro de operações em Goiânia, Goiás – Brasil.</p>
+
+    <div class="mapa-container">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2145.6179829113235!2d-49.34907992596563!3d-16.623914040238624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935ef5f1750e3427%3A0x36c0850d12687683!2sOton%20Parts%20Corp.%20%7C%20Manuten%C3%A7%C3%A3o%20de%20Aeronaves!5e0!3m2!1spt-BR!2sbr!4v1758484407776!5m2!1spt-BR!2sbr"
+        width="100%"
+        height="400"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </section>
+
+  <!-- Hero abaixo dos cards -->
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Excelência em Engenharia Aeronáutica</h2>
+      <p>Atuamos com padrões técnicos inspirados nos grandes nomes da aviação mundial.</p>
+      <a href="https://wa.me/5562982809879?text=Olá!%20Gostaria%20de%20um%20orçamento" target="_blank" class="btn-hero">
+        Fazer orçamento
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+
+      <div class="footer-col">
+        <h4>Nossos Produtos</h4>
+        <ul>
+          <li><a href="produtos.html">Cabos de Comando</a></li>
+          <li><a href="produtos.html">Diário de Bordo</a></li>
+          <li><a href="produtos.html">Componentes Aeronáuticos</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Sobre Nós</h4>
+        <ul>
+          <li><a href="sobre.html">Quem Somos</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contato</h4>
+        <ul>
+          <li><a href="contato.html">Contate-nos</a></li>
+          <li><a href="https://wa.me/5562982809879" target="_blank">WhatsApp</a></li>
+          <li>contato@otonparts.com</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      &copy; 2026 Oton Parts Corp. Todos os direitos reservados.
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+  </div>
+
+  <div class="footer-bottom">
+    © 2026 Oton Parts Corp. Todos os direitos reservados.
+  </div>
+</footer>
+
+
+    <p>&copy; 2025 Oton Parts Corp. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
